@@ -1,7 +1,7 @@
 import React from "react";
 
 const Buy = () => {
-  return <div>Buy</div>;
+  return <div>buy</div>;
 };
 
 export default Buy;

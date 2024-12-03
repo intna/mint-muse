@@ -1,7 +1,7 @@
 import React from "react";
 
 const Mint = () => {
-  return <div>Mint</div>;
+  return <div>mint</div>;
 };
 
 export default Mint;
