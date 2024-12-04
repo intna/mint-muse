@@ -19,24 +19,19 @@ const items = [
     icon: Home,
   },
   {
-    title: "Inbox",
+    title: "mint",
     url: "#",
     icon: Inbox,
   },
   {
-    title: "Calendar",
+    title: "sell",
     url: "#",
     icon: Calendar,
   },
   {
-    title: "Search",
+    title: "buy",
     url: "#",
     icon: Search,
-  },
-  {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
   },
 ];
 
@@ -45,15 +40,17 @@ export function MarketSidebar() {
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-xl font-semibold pl-7">
+            NFTMuse
+          </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
-                <SidebarMenuItem key={item.title}>
+                <SidebarMenuItem key={item.title} className="p-4">
                   <SidebarMenuButton asChild>
                     <a href={item.url}>
                       <item.icon />
-                      <span>{item.title}</span>
+                      <span className="text-xl">{item.title}</span>
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
